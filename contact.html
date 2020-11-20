@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Easybank/contact</title>
+  </head>
+  <body>
+    
+
+    <div class="login-div">
+      <div class="logo"></div>
+      <h3 class="title">Contact Us</h3>
+      <p id="error"></p>
+      <form id="myForm" onsubmit="return validation()">
+        <div class="fields">
+          <div class="username">
+            <input type=" username" class="user-input" placeholder="username" id="username">
+          </div>
+          <div class="password">
+            <input type="password" class="user-input" placeholder="password" >
+          </div>
+          
+          <button type="submit" class="signin-button" value="login"> login</button>
+
+        <div class="link">
+            <a href="#">forgot password</a> or  <a href="#">forgot password</a>
+        </div>
+        <!-- <a href="/index.html" class="back">back</a> -->
+
+      </div>
+      </form>
+
+      
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

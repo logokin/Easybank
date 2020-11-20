@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family:'Lato',sans-serif ;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #ecf0f3;
+}
+
+
+.login-div{
+    min-width:calc(100%-100px);
+    min-height:calc(100%-100px);
+    padding:10px 25px 10px 25px ;
+    border-radius: 40px;
+    background:#ecf0f3 ;
+    box-shadow: 13px 13px 20px #cbced1,
+               -13px -13px 20px #ffffff;
+    /* margin:3rem auto; */
+}
+
+.logo{
+    background: url(./images/logo.svg);
+    background-origin:border-box ;
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    color: gray;
+    text-shadow: 1px 1px 3px #1da88a;
+}
+
+
+.fields{
+    width: 100%;
+    padding:15px 5px 5px 5px ;
+}
+
+.fields input{
+    border: none;
+    outline: none;
+    background:none ;
+    font-size: 18px;
+    color:#1da88a ;
+    padding: 12px 10px 12px 10px;
+}
+
+.username, .password{
+    margin-bottom: 23px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+               inset -8px -8px 8px #ffffff ;
+}
+
+::placeholder{
+    padding-left: 10px;
+}
+
+.signin-button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Lato";
+    color: #fff;
+    text-align: center;
+    background: #2acfaa;
+    box-shadow:  3px 3px 8px #b1b1b1,
+               -8px -8px 8px #ffffff ;
+   transition: .5s;            
+}
+
+.signin-button:hover{
+    background: #2fdbb6;
+}
+.signin-button:active{
+    background: #1da88a;
+}
+
+.link{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.link a{
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
+
+.fields .back{
+    text-decoration: underline;
+    padding-top: 4px;
+    font-size: 12px;
+    color:#1da88a ;
+}
+
+/*  JAVASCRIPT POS */
+.login-div #error{
+    padding: 0px;
+    border:1px solid #2fdbb6 ;
+    text-align: center;
+    margin-bottom: ;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    font-size: 10px;
+}
